@@ -1,69 +1,89 @@
-<p align="center">
- <img width="100px" src="https://raw.githubusercontent.com/hebertcisco/ts-npm-package-boilerplate/main/.github/images/favicon512x512-npm.png" align="center" alt=":package: ts-npm-package-boilerplate" />
- <h2 align="center">:package: ts-npm-package-boilerplate</h2>
- <p align="center">TypeScript NPM Module Boilerplate</p>
-  <p align="center">
-    <a href="https://github.com/hebertcisco/ts-npm-package-boilerplate/issues">
-      <img alt="Issues" src="https://img.shields.io/github/issues/hebertcisco/ts-npm-package-boilerplate?style=flat&color=336791" />
-    </a>
-    <a href="https://github.com/hebertcisco/ts-npm-package-boilerplate/pulls">
-      <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/hebertcisco/ts-npm-package-boilerplate?style=flat&color=336791" />
-    </a>
-     <a href="https://github.com/hebertcisco/ts-npm-package-boilerplate">
-      <img alt="GitHub Downloads" src="https://img.shields.io/npm/dw/ts-npm-package-boilerplate?style=flat&color=336791" />
-    </a>
-    <a href="https://github.com/hebertcisco/ts-npm-package-boilerplate">
-      <img alt="GitHub Total Downloads" src="https://img.shields.io/npm/dt/ts-npm-package-boilerplate?color=336791&label=Total%20downloads" />
-    </a>
- <a href="https://github.com/hebertcisco/ts-npm-package-boilerplate">
-      <img alt="GitHub release" src="https://img.shields.io/github/release/hebertcisco/ts-npm-package-boilerplate.svg?style=flat&color=336791" />
-    </a>
-    <br />
-    <br />
-  <a href="https://github.com/hebertcisco/ts-npm-package-boilerplate/issues/new/choose">Report Bug</a>
-  <a href="https://github.com/hebertcisco/ts-npm-package-boilerplate/issues/new/choose">Request Feature</a>
-  </p>
- <h3 align="center">Systems on which it has been tested:</h3>
- <p align="center">
-   <a href="https://www.apple.com/br/macos/">
-      <img alt="Macos" src="https://img.shields.io/badge/mac%20os-000000?style=for-the-badge&logo=apple&logoColor=white&style=flat" />
-    </a>
-    <a href="https://ubuntu.com/download">
-      <img alt="Ubuntu" src="https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white&style=flat" />
-    </a>
-    <a href="https://www.microsoft.com/pt-br/windows/">
-      <img alt="Windows" src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white&style=flat" />
-    </a>
-  </p>
-<p align="center">Did you like the project? Please, considerate <a href="https://www.buymeacoffee.com/hebertcisco">a donation</a> to help improve!</p>
-
-<p align="center"><strong>TypeScript NPM Module Boilerplate</strong>✨</p>
-
-
-# Getting started
-
 ## Installation
 
-> Clone this repository: `git clone https://github.com/hebertcisco/ts-npm-package-boilerplate`
-
-### Open the directory and run the script line:
+> Install with yarn or npm: `yarn` or `npm`:
 
 ```bash
-cd ts-npm-package-boilerplate 
+# yarn
+yarn add palindromic
 ```
-```bash
-npm i  # or yarn
-```
-```bash
-rm -rf .git && git init && git add . && git commit -m "Initial commit" #Optional
-```
-Or create use the button "Use this template"
 
-Edit the Icon on Figma:
+```bash
+# npm
+npm i palindromic --save
+```
 
-<a href="https://www.figma.com/file/vpevGX3j9tmtW8OyLQ9eUm/ts-npm-package-boilerplate-icon?node-id=0%3A1">
-   <img alt="Figma Icon" src="https://raw.githubusercontent.com/hebertcisco/ts-npm-package-boilerplate/main/.github/images/figma-badge.png"/>
-</a>
+### Import the lib with es6 or cjs
+
+```mjs
+// es6
+import palindromic from 'palindromic';
+```
+
+```cjs
+// cjs
+const palindromic = require('palindromic');
+```
+
+### Usage examples
+
+#### Helpers
+
+##### findPalindromic
+
+```cjs
+#!/usr/bin/env node
+const { findPalindromic } = require("palindromic");
+
+const is_palindromic = [666, 777, 888, 999, 1111, 2222];
+const not_palindromic = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+const palindromic_list = findPalindromic([...is_palindromic, ...not_palindromic]);
+console.log(palindromic_list); // [666, 777, 888, 999, 1111, 2222]
+```
+
+##### isPalindromic
+
+```cjs
+#!/usr/bin/env node
+const { isPalindromic } = require("palindromic");
+
+const is_palindromic = 777;
+const not_palindromic = 123;
+
+console.log(is_palindromic); // true
+console.log(not_palindromic); // false
+```
+
+#### Utils
+
+##### findPrimesNumbers
+
+```ts
+#!/usr/bin/env node
+import {findPrimesNumbers} from 'palindromic';
+let primal_numbers: number[] = [];
+
+for (let i = 1; i < 100; i++) {
+    if (isPrimeNumber(i)) {
+       primal_numbers.push(i);
+    }
+}
+const result = findPrimesNumbers(primal_numbers);
+console.log(result); // [ 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97]
+```
+
+##### isPrimeNumber
+
+```ts
+#!/usr/bin/env node
+import {isPrimeNumber} from 'palindromic';
+
+const is_prime_number = isPrimeNumber(7);
+const not_prime_number = isPrimeNumber(8);
+
+console.log(is_prime_number); // true
+console.log(not_prime_number); // false
+```
 
 ## 🤝 Contributing
 
@@ -78,8 +98,6 @@ Or buy me a coffee 🙌🏾
 <a href="https://www.buymeacoffee.com/hebertcisco">
     <img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=hebertcisco&button_colour=FFDD00&font_colour=000000&font_family=Inter&outline_colour=000000&coffee_colour=ffffff" />
 </a>
-
-[![codecov](https://codecov.io/gh/hebertcisco/ts-npm-package-boilerplate/branch/main/graph/badge.svg?token=Q9fr548J0D)](https://codecov.io/gh/hebertcisco/ts-npm-package-boilerplate)
 
 ## 📝 License
 
