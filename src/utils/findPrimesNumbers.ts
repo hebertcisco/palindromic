@@ -1,4 +1,4 @@
-import { isPrimeNumber } from ".";
+import { isPrimeNumber } from '.';
 
 /**
  * @function findPrimalNumbers
@@ -6,6 +6,6 @@ import { isPrimeNumber } from ".";
  * @return   {Number[]}
  */
 export function findPrimesNumbers(numbers: number[]): number[] {
-    return numbers.filter(isPrimeNumber);
+  return numbers.filter(isPrimeNumber);
 }
 export default findPrimesNumbers;

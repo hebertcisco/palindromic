@@ -1,4 +1,4 @@
-import isPalindromic from "./isPalindromic";
+import isPalindromic from './isPalindromic';
 
 /**
  * @function findPalindromic
@@ -6,12 +6,12 @@ import isPalindromic from "./isPalindromic";
  * @return   {Number[]}
  */
 export function findPalindromic(numbers: number[]): number[] {
-    let palindromic: number[] = [];
-    for (let i = 0; i < numbers.length; i++) {
-        if (isPalindromic(numbers[i])) {
-            palindromic.push(numbers[i]);
-        }
+  const palindromic: number[] = [];
+  for (let i = 0; i < numbers.length; i++) {
+    if (isPalindromic(numbers[i])) {
+      palindromic.push(numbers[i]);
     }
-    return palindromic;
+  }
+  return palindromic;
 }
 export default findPalindromic;

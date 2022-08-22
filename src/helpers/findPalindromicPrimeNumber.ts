@@ -1,5 +1,5 @@
-import isPrimeNumber from "../utils/isPrimeNumber";
-import isPalindromic from "./isPalindromic";
+import isPrimeNumber from '../utils/isPrimeNumber';
+import isPalindromic from './isPalindromic';
 
 /**
  * @function findPalindromicPrimeNumber
@@ -7,9 +7,9 @@ import isPalindromic from "./isPalindromic";
  * @return   {Number}
  */
 export function findPalindromicPrimeNumber(value: number): number {
-    if (isPrimeNumber(value) && isPalindromic(value)) {
-        return value;
-    }
-    return 0;
+  if (isPrimeNumber(value) && isPalindromic(value)) {
+    return value;
+  }
+  return 0;
 }
 export default findPalindromicPrimeNumber;

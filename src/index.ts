@@ -6,7 +6,7 @@ export * from './helpers';
 export * from './utils';
 
 export const palindromic = {
-    ...helpers,
-    ...utils,
-}
+  ...helpers,
+  ...utils,
+};
 export default palindromic;
