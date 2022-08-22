@@ -4,6 +4,8 @@
 
 [![codecov](https://codecov.io/gh/hebertcisco/palindromic/branch/main/graph/badge.svg?token=PQV2NE71P6)](https://codecov.io/gh/hebertcisco/palindromic)
 
+> By extension, a palindrome is any series of elements with linear symmetry, that is, that have the same sequence of units in both directions.
+
 ## Installation
 
 > Install with yarn or npm: `yarn` or `npm`:
