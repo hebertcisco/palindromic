@@ -40,8 +40,8 @@ const palindromic = require('palindromic');
 #!/usr/bin/env node
 const { findPalindromic } = require("palindromic");
 
-const is_palindromic = [666, 777, 888, 999, 1111, 2222];
-const not_palindromic = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+const is_palindromic = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 22, 33, 44, 55, 66, 77, 88, 99];
+const not_palindromic = [12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 23, 24, 25, 26, 27, 28];
 
 const palindromic_list = findPalindromic([...is_palindromic, ...not_palindromic]);
 console.log(palindromic_list); // [666, 777, 888, 999, 1111, 2222]
@@ -53,8 +53,8 @@ console.log(palindromic_list); // [666, 777, 888, 999, 1111, 2222]
 #!/usr/bin/env node
 const { isPalindromic } = require("palindromic");
 
-const is_palindromic = 777;
-const not_palindromic = 123;
+const is_palindromic = 77;
+const not_palindromic = 13;
 
 console.log(is_palindromic); // true
 console.log(not_palindromic); // false
