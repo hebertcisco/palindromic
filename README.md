@@ -1,3 +1,7 @@
+[![Node.js build and publish package](https://github.com/hebertcisco/palindromic/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/hebertcisco/palindromic/actions/workflows/npm-publish.yml)
+
+[![Running Code Coverage](https://github.com/hebertcisco/palindromic/actions/workflows/coverage.yml/badge.svg)](https://github.com/hebertcisco/palindromic/actions/workflows/coverage.yml)
+
 ## Installation
 
 > Install with yarn or npm: `yarn` or `npm`:
