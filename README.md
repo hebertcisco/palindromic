@@ -2,6 +2,8 @@
 
 [![Running Code Coverage](https://github.com/hebertcisco/palindromic/actions/workflows/coverage.yml/badge.svg)](https://github.com/hebertcisco/palindromic/actions/workflows/coverage.yml)
 
+[![codecov](https://codecov.io/gh/hebertcisco/palindromic/branch/main/graph/badge.svg?token=PQV2NE71P6)](https://codecov.io/gh/hebertcisco/palindromic)
+
 ## Installation
 
 > Install with yarn or npm: `yarn` or `npm`:
