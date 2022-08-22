@@ -58,8 +58,8 @@ const { isPalindromic } = require("palindromic");
 const is_palindromic = 77;
 const not_palindromic = 13;
 
-console.log(is_palindromic); // true
-console.log(not_palindromic); // false
+console.log(isPalindromic(is_palindromic)); // true
+console.log(isPalindromic(not_palindromic)); // false
 ```
 
 #### Utils
@@ -68,7 +68,8 @@ console.log(not_palindromic); // false
 
 ```ts
 #!/usr/bin/env node
-import {findPrimesNumbers} from 'palindromic';
+import { findPrimesNumbers, isPrimeNumber } from 'palindromic';
+
 let primal_numbers: number[] = [];
 
 for (let i = 1; i < 100; i++) {
@@ -77,7 +78,7 @@ for (let i = 1; i < 100; i++) {
     }
 }
 const result = findPrimesNumbers(primal_numbers);
-console.log(result); // [ 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97]
+console.log(result); // [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97]
 ```
 
 ##### isPrimeNumber
