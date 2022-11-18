@@ -3,6 +3,7 @@
 [![Running Code Coverage](https://github.com/hebertcisco/palindromic/actions/workflows/coverage.yml/badge.svg)](https://github.com/hebertcisco/palindromic/actions/workflows/coverage.yml)
 
 [![codecov](https://codecov.io/gh/hebertcisco/palindromic/branch/main/graph/badge.svg?token=PQV2NE71P6)](https://codecov.io/gh/hebertcisco/palindromic)
+![](https://img.shields.io/badge/Node.js-^10-43853D?style=flat&logo=node.js&logoColor=white)
 
 > By extension, a palindrome is any series of elements with linear symmetry, that is, that have the same sequence of units in both directions.
 
