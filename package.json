@@ -1,6 +1,6 @@
 {
   "name": "palindromic",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "By extension, a palindrome is any series of elements with linear symmetry, that is, that have the same sequence of units in both directions.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
